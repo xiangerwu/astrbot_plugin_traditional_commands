@@ -1,0 +1,1 @@
+"""Traditional command compatibility."""

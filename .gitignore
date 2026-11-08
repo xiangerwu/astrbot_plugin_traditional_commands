@@ -1,0 +1,18 @@
+# Credentials and machine-specific research must stay out of releases.
+.env
+.env.*
+!.env.example
+research/
+docs/local-audit.md
+command-inventory.csv
+traditional-command-mappings.csv
+# Local Python environment and generated packages.
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+dist/
+build/
+*.egg-info/
+*.zip
