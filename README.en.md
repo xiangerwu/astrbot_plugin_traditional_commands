@@ -6,7 +6,7 @@
 
 Accept verified Traditional Chinese command spellings alongside the original Simplified Chinese commands. Both routes use the original plugin handler, permissions and argument parser. Prompts, names, remembered text and ordinary chat are not translated.
 
-Version 0.2.0 passed 16 local tests and has been deployed, with plugin status and translated locale assets verified through the API. Live Discord command interactions and visual UI acceptance remain untested. Marketplace submission is pending. No additional model calls or API keys are required. Optional WebUI conversion uses the OpenCC dependency in `requirements.txt`.
+Version 0.2.1 passed 17 local tests and has been deployed, with plugin status and translated locale assets verified through the API. Live Discord command interactions and visual UI acceptance remain untested. Marketplace submission is pending. No additional model calls or API keys are required. Optional WebUI conversion uses the OpenCC dependency in `requirements.txt`.
 
 ## Supported plugins
 
@@ -35,9 +35,9 @@ Original Simplified Chinese commands and existing English aliases remain availab
 
 ## Optional WebUI conversion
 
-Enable `webui_traditional_enabled` (off by default), save/reload this plugin, and refresh the page. Keep AstrBot's language selector on Simplified Chinese. Disable, reload and refresh to restore the original text.
+Enable `webui_traditional_enabled` (off by default), save/reload this plugin, and refresh the page. Select the new “繁體中文” option (blank flag). The original Simplified Chinese option remains available. Disable, reload and refresh to restore the original text.
 
-A reviewed 4.29.4 locale asset is served as a translated copy; original assets remain untouched. This server-wide option affects all WebUI users who select Simplified Chinese. No DOM manipulation, input-field processing, chat rewriting or API response translation is performed. Unknown dashboard builds fall back to the original asset. Hard-coded labels and third-party plugin pages/descriptions may remain Simplified Chinese. See [WebUI details](https://github.com/xiangerwu/astrbot_plugin_traditional_commands/blob/main/docs/webui.md).
+The reviewed 4.29.4 main asset gains a locale loader and menu entry, backed by a separate translated locale copy. Original files remain untouched. The server-wide switch makes the option available; each browser stores its own language choice. No DOM manipulation, input-field processing, chat rewriting or API response translation is performed. Unknown dashboard builds fall back to the original asset. Hard-coded labels and third-party plugin pages/descriptions may remain Simplified Chinese. See [WebUI details](https://github.com/xiangerwu/astrbot_plugin_traditional_commands/blob/main/docs/webui.md).
 
 ## Compatibility boundaries
 
