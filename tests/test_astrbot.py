@@ -208,7 +208,7 @@ class AstrBotTests(unittest.IsolatedAsyncioTestCase):
 
         module = "data.plugins." + plugin + ".main"
         self.plugins[module] = NS(
-            name=plugin, version=version, activated=True, reserved=False
+            name=plugin, version=version.split("|")[0], activated=True, reserved=False
         )
         handler = self.ns["StarHandlerMetadata"](
             self.ns["EventType"].AdapterMessageEvent,
@@ -265,6 +265,30 @@ class AstrBotTests(unittest.IsolatedAsyncioTestCase):
                     self.assertEqual(len(self.calls), before + 1)
                     self.assertEqual(self.calls[-1][0], row["original"])
                     self.assertEqual(event.message_str, spelling)
+
+    async def test_meme_manager_supported_versions_and_upgrade(self):
+        rows = [r for r in self.runtime.rules if r["plugin"] == "meme_manager"]
+        self.assertEqual(len(rows), 13)
+        for version in ("5.3.5", "5.3.6", "5.3.7"):
+            # Simulate upstream handlers being replaced during a plugin reload.
+            self.registry.clear()
+            for row in rows:
+                self.add("meme_manager", version, row["original"], admin=True)
+            self.runtime.install()
+            self.runtime.install()
+            for row in rows:
+                for spelling in (row["original"], row["traditional"]):
+                    with self.subTest(version=version, command=spelling):
+                        before = len(self.calls)
+                        event = await self.dispatch("/" + spelling)
+                        allowed = version != "5.3.7" or spelling == row["original"]
+                        self.assertEqual(len(self.calls), before + int(allowed))
+                        if allowed:
+                            self.assertEqual(self.calls[-1][0], row["original"])
+                        self.assertEqual(event.message_str, spelling)
+                        before = len(self.calls)
+                        await self.dispatch("/" + spelling, sender="member")
+                        self.assertEqual(len(self.calls), before)
 
     async def test_manual_parameters_and_group_permissions(self):
         self.add(

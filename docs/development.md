@@ -21,7 +21,7 @@ ruff check .
 ruff format --check .
 ```
 
-未設定 `ASTRBOT_REFERENCE` 時只執行 5 項獨立測試，12 項原始碼整合測試會明確跳過；不能把這次結果稱為全部整合通過。
+未設定 `ASTRBOT_REFERENCE` 時只執行 5 項獨立測試，13 項原始碼整合測試會明確跳過；不能把這次結果稱為全部整合通過。
 
 ## 完整整合測試
 
@@ -58,7 +58,7 @@ $env:ASTRBOT_REFERENCE = (Resolve-Path research).Path
 python -m unittest discover -s tests -v
 ```
 
-本次完整執行結果為 **17 項通過、0 跳過**。Windows 沙箱若限制 `asyncio` 建立本機 socketpair，測試可能卡在事件迴圈初始化；請在正常本機終端執行，不要將環境問題改成略過測試。
+本次完整執行結果為 **18 項通過、0 跳過**。Windows 沙箱若限制 `asyncio` 建立本機 socketpair，測試可能卡在事件迴圈初始化；請在正常本機終端執行，不要將環境問題改成略過測試。
 
 ## 新增映射
 
@@ -78,3 +78,5 @@ python -m unittest discover -s tests -v
 未提供參考檔或 Node.js 時，4 項 WebUI 整合測試會跳過。完整驗證比較全部語系物件鍵名、非字串值、插值參數與程式骨架，並執行官方 `t()` 的原邏輯，確認使用者提供的文字未改寫。測試只用 API 取得的靜態原始碼與本機程序，不操作瀏覽器；不等於全部頁面已完成視覺驗收。
 
 請以二進位模式保存 HTTP 取得的參考資產，避免 Windows 自動把 LF 改成 CRLF，造成與正式資產的 SHA-256 不符。
+
+CSV 的 `version` 欄位可用 `|` 列出多個已逐一核對的版本，例如 `5.3.5|5.3.6`；不表示版本範圍或自動接受後續更新。13 條表情包管理器映射共用相同指令邏輯。

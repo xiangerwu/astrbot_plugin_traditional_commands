@@ -6,14 +6,14 @@
 
 讓已支援的 AstrBot 插件同時接受繁體與原有簡體文字指令，例如 `/生圖` 和 `/生图` 都進入原插件。只轉換已確認的指令與固定選項，不翻譯生圖提示詞、預設名稱、記憶內容或聊天文字。
 
-**0.2.1：17 項本機測試通過，已部署並以 API 核對插件狀態與繁體語系資產；Discord 指令實機互動及介面視覺驗收仍待完成，尚未提交插件市場。** 無額外模型費用；介面繁體化使用 OpenCC。指令相容不修改其他插件檔案或保存的指令設定。
+**0.2.2：18 項本機測試通過，已部署並以 API 核對插件狀態與繁體語系資產；Discord 指令實機互動及介面視覺驗收仍待完成，尚未提交插件市場。** 無額外模型費用；介面繁體化使用 OpenCC。指令相容不修改其他插件檔案或保存的指令設定。
 
 ## 支援插件與上游倉庫
 
 | 插件 | 已核對版本 | 簡體 → 繁體範例 | 對照數 | 上游倉庫 |
 |---|---|---|---:|---|
 | 通用生圖 | v1.8.4 | 生图 → 生圖；预设 删除 → 預設 刪除 | 6 | [Railgun19457/astrbot_plugin_image_generation](https://github.com/Railgun19457/astrbot_plugin_image_generation) |
-| 表情包管理器 | 5.3.5 | 表情管理 查看图库 → 表情管理 查看圖庫 | 13 | [anka-afk/astrbot_plugin_meme_manager](https://github.com/anka-afk/astrbot_plugin_meme_manager) |
+| 表情包管理器 | 5.3.5、5.3.6 | 表情管理 查看图库 → 表情管理 查看圖庫 | 13 | [anka-afk/astrbot_plugin_meme_manager](https://github.com/anka-afk/astrbot_plugin_meme_manager) |
 | 認主 | 4.4.1 | 认主 档案 → 認主 檔案；记住 → 記住 | 13 | [QuanWander/astrbot_plugin_master_aware](https://github.com/QuanWander/astrbot_plugin_master_aware) |
 | 好感度管理 | v1.2.0 | 管理 计数器 开启 → 管理 計數器 開啟 | 9 | [wuyan1003/likability-level](https://github.com/wuyan1003/likability-level) |
 | 更好的幫助 | 1.3.1 | 帮助 → 幫助；菜单 → 菜單 | 2 | [yuexuan6699/astrbot_plugin_help_page](https://github.com/yuexuan6699/astrbot_plugin_help_page) |

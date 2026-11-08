@@ -3,19 +3,19 @@ astrbot_plugin_dsbalance,1.0.1,registered_command,收款码,收款碼,runtime_co
 astrbot_plugin_dsbalance,1.0.1,registered_command,余额,餘額,runtime_component,保持原指令與原權限；不轉換自由輸入參數
 astrbot_plugin_master_aware,4.4.1,registered_command,认主,認主,runtime_component,原生別名候選；認主另需處理原始訊息前綴
 astrbot_plugin_help_page,1.3.1,registered_command,帮助,幫助,runtime_component,保持原指令與原權限；不轉換自由輸入參數
-meme_manager,5.3.5,registered_command,表情管理 查看图库,表情管理 查看圖庫,runtime_component,保持原指令與原權限；不轉換自由輸入參數
-meme_manager,5.3.5,registered_command,表情管理 添加分类,表情管理 添加分類,runtime_component,保持原指令與原權限；不轉換自由輸入參數
-meme_manager,5.3.5,registered_command,表情管理 开始收集,表情管理 開始收集,runtime_component,保持原指令與原權限；不轉換自由輸入參數
-meme_manager,5.3.5,registered_command,表情管理 结束收集,表情管理 結束收集,runtime_component,保持原指令與原權限；不轉換自由輸入參數
-meme_manager,5.3.5,registered_command,表情管理 恢复默认表情包,表情管理 恢復默認表情包,runtime_component,保持原指令與原權限；不轉換自由輸入參數
-meme_manager,5.3.5,registered_command,表情管理 清空指定类型,表情管理 清空指定類型,runtime_component,保持原指令與原權限；不轉換自由輸入參數
-meme_manager,5.3.5,registered_command,表情管理 删除类型本身,表情管理 刪除類型本身,runtime_component,保持原指令與原權限；不轉換自由輸入參數
-meme_manager,5.3.5,registered_command,表情管理 同步状态,表情管理 同步狀態,runtime_component,保持原指令與原權限；不轉換自由輸入參數
-meme_manager,5.3.5,registered_command,表情管理 同步到云端,表情管理 同步到雲端,runtime_component,保持原指令與原權限；不轉換自由輸入參數
-meme_manager,5.3.5,registered_command,表情管理 从云端同步,表情管理 從雲端同步,runtime_component,保持原指令與原權限；不轉換自由輸入參數
-meme_manager,5.3.5,registered_command,表情管理 覆盖到云端,表情管理 覆蓋到雲端,runtime_component,保持原指令與原權限；不轉換自由輸入參數
-meme_manager,5.3.5,registered_command,表情管理 从云端覆盖,表情管理 從雲端覆蓋,runtime_component,保持原指令與原權限；不轉換自由輸入參數
-meme_manager,5.3.5,registered_command,表情管理 图库统计,表情管理 圖庫統計,runtime_component,保持原指令與原權限；不轉換自由輸入參數
+meme_manager,5.3.5|5.3.6,registered_command,表情管理 查看图库,表情管理 查看圖庫,runtime_component,保持原指令與原權限；不轉換自由輸入參數
+meme_manager,5.3.5|5.3.6,registered_command,表情管理 添加分类,表情管理 添加分類,runtime_component,保持原指令與原權限；不轉換自由輸入參數
+meme_manager,5.3.5|5.3.6,registered_command,表情管理 开始收集,表情管理 開始收集,runtime_component,保持原指令與原權限；不轉換自由輸入參數
+meme_manager,5.3.5|5.3.6,registered_command,表情管理 结束收集,表情管理 結束收集,runtime_component,保持原指令與原權限；不轉換自由輸入參數
+meme_manager,5.3.5|5.3.6,registered_command,表情管理 恢复默认表情包,表情管理 恢復默認表情包,runtime_component,保持原指令與原權限；不轉換自由輸入參數
+meme_manager,5.3.5|5.3.6,registered_command,表情管理 清空指定类型,表情管理 清空指定類型,runtime_component,保持原指令與原權限；不轉換自由輸入參數
+meme_manager,5.3.5|5.3.6,registered_command,表情管理 删除类型本身,表情管理 刪除類型本身,runtime_component,保持原指令與原權限；不轉換自由輸入參數
+meme_manager,5.3.5|5.3.6,registered_command,表情管理 同步状态,表情管理 同步狀態,runtime_component,保持原指令與原權限；不轉換自由輸入參數
+meme_manager,5.3.5|5.3.6,registered_command,表情管理 同步到云端,表情管理 同步到雲端,runtime_component,保持原指令與原權限；不轉換自由輸入參數
+meme_manager,5.3.5|5.3.6,registered_command,表情管理 从云端同步,表情管理 從雲端同步,runtime_component,保持原指令與原權限；不轉換自由輸入參數
+meme_manager,5.3.5|5.3.6,registered_command,表情管理 覆盖到云端,表情管理 覆蓋到雲端,runtime_component,保持原指令與原權限；不轉換自由輸入參數
+meme_manager,5.3.5|5.3.6,registered_command,表情管理 从云端覆盖,表情管理 從雲端覆蓋,runtime_component,保持原指令與原權限；不轉換自由輸入參數
+meme_manager,5.3.5|5.3.6,registered_command,表情管理 图库统计,表情管理 圖庫統計,runtime_component,保持原指令與原權限；不轉換自由輸入參數
 astrbot_plugin_image_generation,v1.8.4,registered_command,生图任务,生圖任務,runtime_component,保持原指令與原權限；不轉換自由輸入參數
 astrbot_plugin_image_generation,v1.8.4,registered_command,生图取消,生圖取消,runtime_component,保持原指令與原權限；不轉換自由輸入參數
 astrbot_plugin_image_generation,v1.8.4,registered_command,生图,生圖,runtime_component,保持原指令與原權限；不轉換自由輸入參數

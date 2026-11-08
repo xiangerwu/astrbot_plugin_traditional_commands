@@ -17,7 +17,7 @@
 | 指令／子指令 | `预设` | `預設` |
 | 固定選項 | `预设 删除` | `預設 刪除` |
 
-## 表情包管理器 5.3.5
+## 表情包管理器 5.3.5、5.3.6
 
 上游：[anka-afk/astrbot_plugin_meme_manager](https://github.com/anka-afk/astrbot_plugin_meme_manager)
 

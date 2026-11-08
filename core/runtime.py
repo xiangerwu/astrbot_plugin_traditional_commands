@@ -73,7 +73,8 @@ class Compatibility:
             rules = [
                 r
                 for r in rules
-                if r["version"].lstrip("v") == plugin.version.lstrip("v")
+                if plugin.version.lstrip("v")
+                in (v.lstrip("v") for v in r["version"].split("|"))
             ]
             if not rules:
                 key = (plugin.name, plugin.version)
