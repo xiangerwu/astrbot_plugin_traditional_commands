@@ -16,13 +16,13 @@
 
 安裝必需：`main.py`、`metadata.yaml`、`core/`、`docs/command-mappings.csv`。發行包一併保留 README、中英文文件、`LICENSE`、`assets/intro.png` 與根目錄 `logo.png`。不得攤平目錄。
 
-0.2.2 須包含 `requirements.txt`（OpenCC）與 `_conf_schema.json`（預設關閉的介面繁體化開關）。不要打包執行時產生的 WebUI 語系副本；這些副本保存在 AstrBot 的插件資料目錄。
+0.2.3 須包含 `requirements.txt`（OpenCC）與 `_conf_schema.json`（預設關閉的介面繁體化開關）。不要打包執行時產生的 WebUI 語系副本；這些副本保存在 AstrBot 的插件資料目錄。
 
 推送已通過驗證的提交後，可在已建立的 Git 倉庫中使用：
 
 ```bash
 mkdir -p dist
-git archive --format=zip --output=dist/astrbot_plugin_traditional_commands-0.2.2.zip HEAD
+git archive --format=zip --output=dist/astrbot_plugin_traditional_commands-0.2.3.zip HEAD
 ```
 
 只包含已追蹤且已提交檔案；打包前檢查 `git status --short`。本機 `dist/` 不提交。

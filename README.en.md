@@ -6,7 +6,7 @@
 
 Accept verified Traditional Chinese command spellings alongside the original Simplified Chinese commands. Both routes use the original plugin handler, permissions and argument parser. Prompts, names, remembered text and ordinary chat are not translated.
 
-Version 0.2.2 passed 18 local tests and has been deployed, with plugin status and translated locale assets verified through the API. Live Discord command interactions and visual UI acceptance remain untested. Marketplace submission is pending. No additional model calls or API keys are required. Optional WebUI conversion uses the OpenCC dependency in `requirements.txt`.
+Version 0.2.3 passed 19 local tests and has been deployed, with plugin status and translated locale assets verified through the API. Live Discord command interactions and visual UI acceptance remain untested. Marketplace submission is pending. No additional model calls or API keys are required. Optional WebUI conversion uses the OpenCC dependency in `requirements.txt`.
 
 ## Supported plugins
 
@@ -14,7 +14,7 @@ The table lists tested upstream versions, spelling examples, mapping counts and 
 
 | 插件 | 已核對版本 | 簡體 → 繁體範例 | 對照數 | 上游倉庫 |
 |---|---|---|---:|---|
-| 通用生圖 | v1.8.4 | 生图 → 生圖；预设 删除 → 預設 刪除 | 6 | [Railgun19457/astrbot_plugin_image_generation](https://github.com/Railgun19457/astrbot_plugin_image_generation) |
+| 通用生圖 | v1.8.4、v1.8.5 | 生图 → 生圖；预设 删除 → 預設 刪除 | 6 | [Railgun19457/astrbot_plugin_image_generation](https://github.com/Railgun19457/astrbot_plugin_image_generation) |
 | 表情包管理器 | 5.3.5、5.3.6 | 表情管理 查看图库 → 表情管理 查看圖庫 | 13 | [anka-afk/astrbot_plugin_meme_manager](https://github.com/anka-afk/astrbot_plugin_meme_manager) |
 | 認主 | 4.4.1 | 认主 档案 → 認主 檔案；记住 → 記住 | 13 | [QuanWander/astrbot_plugin_master_aware](https://github.com/QuanWander/astrbot_plugin_master_aware) |
 | 好感度管理 | v1.2.0 | 管理 计数器 开启 → 管理 計數器 開啟 | 9 | [wuyan1003/likability-level](https://github.com/wuyan1003/likability-level) |

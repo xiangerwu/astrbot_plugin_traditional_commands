@@ -1,7 +1,7 @@
 name: astrbot_plugin_traditional_commands
 display_name: 繁體指令相容
 desc: 保留原簡體指令並加入繁體相容；可選擇將已核對的 WebUI 核心語系文案繁體化，不轉換輸入與聊天內容。
-version: 0.2.2
+version: 0.2.3
 author: xiangerwu
 repo: https://github.com/xiangerwu/astrbot_plugin_traditional_commands
 astrbot_version: '>=4.29.4,<4.30'

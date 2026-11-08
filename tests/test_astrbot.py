@@ -315,6 +315,33 @@ class AstrBotTests(unittest.IsolatedAsyncioTestCase):
             self.assertTrue(event.stopped)
             self.assertEqual(len(event.sent), 1)
 
+    async def test_image_versions_preserve_commands_and_free_text(self):
+        rows = [
+            r
+            for r in self.runtime.rules
+            if r["plugin"] == "astrbot_plugin_image_generation"
+        ]
+        self.assertEqual(len(rows), 6)
+        payload = " 雲端 保留繁體文字"
+        for version in ("v1.8.4", "v1.8.5", "v1.8.6"):
+            self.registry.clear()
+            for row in rows:
+                if row["kind"] == "registered_command":
+                    self.add(row["plugin"], version, row["original"])
+            self.runtime.install()
+            for row in rows:
+                for spelling in (row["original"], row["traditional"]):
+                    with self.subTest(version=version, command=spelling):
+                        before = len(self.calls)
+                        event = await self.dispatch("/" + spelling + payload)
+                        allowed = version != "v1.8.6" or spelling == row["original"]
+                        self.assertEqual(len(self.calls), before + int(allowed))
+                        if allowed:
+                            self.assertEqual(
+                                self.calls[-1][0], row["original"] + payload
+                            )
+                        self.assertEqual(event.message_str, spelling + payload)
+
     async def test_disabled_renamed_alias_collision_and_unload(self):
         h, f = self.add(
             "astrbot_plugin_help_page", "1.3.1", "帮助", aliases={"help", "菜单"}

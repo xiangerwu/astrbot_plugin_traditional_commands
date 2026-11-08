@@ -21,7 +21,7 @@ ruff check .
 ruff format --check .
 ```
 
-未設定 `ASTRBOT_REFERENCE` 時只執行 5 項獨立測試，13 項原始碼整合測試會明確跳過；不能把這次結果稱為全部整合通過。
+未設定 `ASTRBOT_REFERENCE` 時只執行 5 項獨立測試，14 項原始碼整合測試會明確跳過；不能把這次結果稱為全部整合通過。
 
 ## 完整整合測試
 
@@ -58,7 +58,7 @@ $env:ASTRBOT_REFERENCE = (Resolve-Path research).Path
 python -m unittest discover -s tests -v
 ```
 
-本次完整執行結果為 **18 項通過、0 跳過**。Windows 沙箱若限制 `asyncio` 建立本機 socketpair，測試可能卡在事件迴圈初始化；請在正常本機終端執行，不要將環境問題改成略過測試。
+本次完整執行結果為 **19 項通過、0 跳過**。Windows 沙箱若限制 `asyncio` 建立本機 socketpair，測試可能卡在事件迴圈初始化；請在正常本機終端執行，不要將環境問題改成略過測試。
 
 ## 新增映射
 

@@ -4,7 +4,7 @@
 
 本表由 `command-mappings.csv` 整理。只列出有字形差異的入口；未列出的原簡體／英文指令保持原樣。簡繁相同的詞不需補丁。版本不符時不套用相容處理。
 
-## 通用生圖 v1.8.4
+## 通用生圖 v1.8.4、v1.8.5
 
 上游：[Railgun19457/astrbot_plugin_image_generation](https://github.com/Railgun19457/astrbot_plugin_image_generation)
 

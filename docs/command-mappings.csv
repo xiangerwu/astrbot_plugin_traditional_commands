@@ -16,11 +16,11 @@ meme_manager,5.3.5|5.3.6,registered_command,表情管理 从云端同步,表情�
 meme_manager,5.3.5|5.3.6,registered_command,表情管理 覆盖到云端,表情管理 覆蓋到雲端,runtime_component,保持原指令與原權限；不轉換自由輸入參數
 meme_manager,5.3.5|5.3.6,registered_command,表情管理 从云端覆盖,表情管理 從雲端覆蓋,runtime_component,保持原指令與原權限；不轉換自由輸入參數
 meme_manager,5.3.5|5.3.6,registered_command,表情管理 图库统计,表情管理 圖庫統計,runtime_component,保持原指令與原權限；不轉換自由輸入參數
-astrbot_plugin_image_generation,v1.8.4,registered_command,生图任务,生圖任務,runtime_component,保持原指令與原權限；不轉換自由輸入參數
-astrbot_plugin_image_generation,v1.8.4,registered_command,生图取消,生圖取消,runtime_component,保持原指令與原權限；不轉換自由輸入參數
-astrbot_plugin_image_generation,v1.8.4,registered_command,生图,生圖,runtime_component,保持原指令與原權限；不轉換自由輸入參數
-astrbot_plugin_image_generation,v1.8.4,registered_command,生图模型,生圖模型,runtime_component,保持原指令與原權限；不轉換自由輸入參數
-astrbot_plugin_image_generation,v1.8.4,registered_command,预设,預設,runtime_component,保持原指令與原權限；不轉換自由輸入參數
+astrbot_plugin_image_generation,v1.8.4|v1.8.5,registered_command,生图任务,生圖任務,runtime_component,保持原指令與原權限；不轉換自由輸入參數
+astrbot_plugin_image_generation,v1.8.4|v1.8.5,registered_command,生图取消,生圖取消,runtime_component,保持原指令與原權限；不轉換自由輸入參數
+astrbot_plugin_image_generation,v1.8.4|v1.8.5,registered_command,生图,生圖,runtime_component,保持原指令與原權限；不轉換自由輸入參數
+astrbot_plugin_image_generation,v1.8.4|v1.8.5,registered_command,生图模型,生圖模型,runtime_component,保持原指令與原權限；不轉換自由輸入參數
+astrbot_plugin_image_generation,v1.8.4|v1.8.5,registered_command,预设,預設,runtime_component,保持原指令與原權限；不轉換自由輸入參數
 astrbot_plugin_help_page,1.3.1,existing_alias,菜单,菜單,same_version_source,原有別名還有 help；實際 WebUI 覆寫別名待核對
 astrbot_plugin_master_aware,4.4.1,manual_keyword,认主 状态,認主 狀態,same_version_source,固定動作詞；記憶內容、關鍵詞、ID 原樣保留；原私聊／管理員限制保留
 astrbot_plugin_master_aware,4.4.1,manual_keyword,认主 绑定,認主 綁定,same_version_source,固定動作詞；記憶內容、關鍵詞、ID 原樣保留；原私聊／管理員限制保留
@@ -43,7 +43,7 @@ favoradmin,v1.2.0,manual_keyword,管理 计数器 开启,管理 計數器 開啟
 favoradmin,v1.2.0,manual_keyword,管理 计数器 关闭,管理 計數器 關閉,same_version_source,只轉換 cmd 及計數器固定選項；使用者 ID 和數值不變
 favoradmin,v1.2.0,manual_keyword,管理 计数器 间隔,管理 計數器 間隔,same_version_source,只轉換 cmd 及計數器固定選項；使用者 ID 和數值不變
 favoradmin,v1.2.0,manual_keyword,管理 计数器 数量,管理 計數器 數量,same_version_source,只轉換 cmd 及計數器固定選項；使用者 ID 和數值不變
-astrbot_plugin_image_generation,v1.8.4,manual_keyword,预设 删除,預設 刪除,same_version_source,只轉換固定動作；預設名稱與提示詞保持原樣
+astrbot_plugin_image_generation,v1.8.4|v1.8.5,manual_keyword,预设 删除,預設 刪除,same_version_source,只轉換固定動作；預設名稱與提示詞保持原樣
 astrbot_plugin_gengwiki,0.9.0,registered_command,人设,人設,same_version_source,固定指令／選項相容；自由文字與原權限不變
 astrbot_plugin_gengwiki,0.9.0,registered_command,语录,語錄,same_version_source,固定指令／選項相容；自由文字與原權限不變
 astrbot_plugin_gengwiki,0.9.0,registered_command,热梗,熱梗,same_version_source,固定指令／選項相容；自由文字與原權限不變
